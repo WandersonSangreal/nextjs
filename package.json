@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/WandersonSangreal/nextjs#readme",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "next": "^10.0.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1"
   }
 }

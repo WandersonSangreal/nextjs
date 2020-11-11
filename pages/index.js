@@ -1,15 +1,18 @@
-import { useState } from "react";
+import {useState} from "react";
 
 function Home() {
 	return (
-		<div>
-			<h2>Hello World</h2>
-			<Contador />
-		</div>
+		<header className={'header bg-primary'}>
+			<div className={'container text-center'}>
+				<h2>Hello World</h2>
+				<Contador/>
+			</div>
+		</header>
 	);
 }
 
 function Contador() {
+
 	let [contador, setContador] = useState(1);
 
 	function incrementarContador() {
@@ -19,10 +22,11 @@ function Contador() {
 	return (
 		<div>
 			<div>{contador}</div>
-			<br />
-			<button onClick={incrementarContador}>Adicionar</button>
+			<br/>
+			<button className={'btn btn-light'} onClick={incrementarContador}>Adicionar</button>
 		</div>
 	);
+
 }
 
 export default Home;
